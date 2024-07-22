@@ -1,0 +1,157 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1058%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1059%26quot%3b)'%3e%3c/rect%3e%3cpath d='M1440 0L913.05 0L1440 84.41z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M913.05 0L1440 84.41L1440 189.84L474.94999999999993 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M474.94999999999993 0L1440 189.84L1440 355.52L301.54999999999995 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M301.54999999999995 0L1440 355.52L1440 381.65999999999997L149.07999999999996 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L655.41 560L0 504.85z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 504.85L655.41 560L732.8499999999999 560L0 389.47z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 389.47L732.8499999999999 560L1057.85 560L0 371.99z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 371.99L1057.85 560L1278.01 560L0 165.89000000000001z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1058'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1059'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 158%2c 45%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+.fa-star {
+  color: #ffc908;
+}
+
+.carousel .carousel-inner img {
+  width: 600px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: rgba(3, 3, 55, 0.3);
+  color: #d3d3d3;
+  padding: 20px;
+}
+
+form .form-input {
+  width: 100%;
+  padding: 0 20px;
+}
+
+form input {
+  background: transparent;
+  border: 0;
+  border-left: 4px solid;
+  border-color: #039e50;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+
+form input::placeholder {
+  color: #fff;
+}
+
+form button {
+  background-color: #039e50;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+
+.cart-list {
+  padding: 0;
+}
+
+.clear button {
+  border: 0;
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: #fff transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 99;
+}
+
+.count-wrapper {
+  position: relative;
+}
+
+.count-num {
+  position: absolute;
+  top: -4px;
+  left: 3px;
+  background-color: rgba(255, 0, 0, 0.562);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.nav-item i {
+  font-size: 20px;
+}
